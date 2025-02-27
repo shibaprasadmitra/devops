@@ -1,0 +1,62 @@
+
+using System;
+
+namespace Conditional
+{
+	class IfElseIfStatement
+	{
+		public static void Main(string[] args)
+		{
+			float MarkBangla,MarkEnglish,MarkMath,MarkScience,MarkReligion;
+			            
+			Console.WriteLine("Enter the Marks in Bangla : ");
+            		MarkBangla = float.Parse(Console.ReadLine());
+
+			Console.WriteLine("Enter the Marks in English : ");
+            		MarkEnglish = float.Parse(Console.ReadLine());
+
+			Console.WriteLine("Enter the Marks in English : ");
+            		MarkMath = float.Parse(Console.ReadLine());
+
+			Console.WriteLine("Enter the Marks in Science : ");
+            		MarkScience = float.Parse(Console.ReadLine());
+
+			Console.WriteLine("Enter the Marks in Science : ");
+            		MarkReligion = float.Parse(Console.ReadLine());
+
+			if (MarkBangla>= 80 &&  MarkBangla<=100)
+			{
+				Console.WriteLine("Your Letter Grade in Bangla is A+");
+			}
+			else if (MarkBangla>= 70 &&  MarkBangla<=80)
+			{
+				Console.WriteLine("Your Letter Grade in Bangla is A");
+			}
+			else if (MarkBangla>= 60 &&  MarkBangla<=70)
+			{
+				Console.WriteLine("Your Letter Grade in Bangla is A-");
+			}
+			else if (MarkBangla>= 50 &&  MarkBangla<=60)
+			{
+				Console.WriteLine("Your Letter Grade in Bangla is B");
+			}
+			else if (MarkBangla>= 40 &&  MarkBangla<=50)
+			{
+				Console.WriteLine("Your Letter Grade in Bangla is C");
+			}
+			else if (MarkBangla>= 33 &&  MarkBangla<=40)
+			{
+				Console.WriteLine("Your Letter Grade in Bangla is D");
+			}
+			else if (MarkBangla>= 0 &&  MarkBangla<=33)
+			{
+				Console.WriteLine("Your Letter Grade in Bangla is Fail");
+			}
+
+			else
+			{
+				Console.WriteLine("Your Wrong Number");
+			}
+		}
+	}
+}
